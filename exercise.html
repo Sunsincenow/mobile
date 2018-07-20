@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>Document</title>
+	<style>
+		.sup{
+			display: box;
+			display:-webkit-box;
+			display: -o-box;
+			display: -moz-box;
+
+		}
+		.box{
+			-webkit-box-flex:1;
+			-o-box-flex:1;
+			-moz-box-flex:1;
+			height: 199px;
+			background: lightblue;
+		}
+
+		.e1{
+			font-size: 20px;
+			width: 10em;
+			height: 10em;
+			background: grey;
+		}
+		.e2{
+			width: 10em;
+			height: 10em;
+			background: green;
+		}
+	
+		.s{
+			font-size: 17px;
+		}
+		.e3{
+			width: 10em;
+			height: 10em;
+			background: pink;
+		}
+		html{
+			font-size: 30px;
+		}
+		.r{
+			width: 10rem;
+			height: 10rem;
+			background: red;
+		}
+		.p{
+			width: 300px;
+			height: 200px;
+			background:#0074D3; 
+		}
+		.b{
+			width: 30%;
+			height: 100%;
+			background:#011631; 
+			color:#fff;
+		}
+		.m{
+			width: 200px;
+			height: 200px;
+			background: orange;
+		}
+		@media (min-width: 800px){
+			.m{
+			width: 800px;
+			height: 800px;
+			background: blue;
+		}
+		}
+	</style>
+</head>
+<body>
+	<div class='sup'>
+		<div class='box'>弹性布局</div>
+		<div class='box'></div>
+		<div class='box'></div>
+	</div>
+	<div class='p'>
+		<div class='b'>流式布局（百分比）</div>
+	</div>
+	<div class='e1'>
+		可伸缩单位：1.em:若未设置font-size,则1em=16px
+	</div>
+	<div class='e2'>
+		若设置文字大小：1em=font-size,em值=px/祖先元素文字大小
+	</div>
+	<div class='s'>
+		<div class='e3'></div>
+	</div>
+	<div class='r'>2.rem：只跟根节点html文字大小变化。用于适配通过改变根节点文字大小改变整个页面缩放比例</div>
+
+	<div class='m'>
+		媒体查询：即在不同的情况下应用不同的css样式(拖拽窗口大小可查看效果)
+	</div>
+</body>
+</html>
